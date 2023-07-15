@@ -1,0 +1,190 @@
+/* root colors */
+:root {
+  --international-orange: #f45100;
+  --congress-blue: #0458a2;
+  --cloud: #c6c6c6;
+  --stardust: #EDEDED;
+  --main-font:"Fira Sans", Helvetica;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+  padding: 2%;
+  font-family: var(--main-font);
+} 
+.wrapper{
+  /* border: 1px black solid; */
+  
+  padding: 2%;
+}
+.header {
+  background-color: var(--stardust);
+}
+.logo{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 54px;
+  color: var(--congress-blue);
+}
+.user {
+  color: #004989;
+  font-weight:700;
+  padding-bottom: 30px;
+}
+.user img{
+  border-radius: 6%;
+  border: 5px solid white;
+  width: 200px;
+  height: 200px;
+}
+.greeting{
+  font-size: 54px;
+  padding-top: 6%;
+  margin-left: 20%;
+}
+.dropdown {
+  font-size: 40px;
+  font-weight: light;
+}
+.accordion-body{
+  background-color: var(--stardust);
+  border: none;
+}
+.accordion-body row {
+  padding: 50px ;
+}
+.blue-box-header {
+  background-color: var(--congress-blue);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color:white;
+  padding: 13px;
+  font-size: 50px;
+}
+.dropdown-article {
+  background-color: white;
+}
+.article {
+  padding: 20px;
+  position: relative;
+}
+.accordion-body a {
+text-decoration: none;
+}
+.arrow-icon{
+  position: absolute;
+  top: 40%;
+  right: 2%;
+  color: var(--congress-blue);
+  font-size: 30px;
+}
+.article-title{
+  color:var(--congress-blue);
+  font-size: 40px;
+}
+.article-content {
+  font-size: 50px;
+  color: black;
+}
+.weather {
+  background-color: var(--congress-blue);
+  color:white;
+  padding: 40px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.weather img{
+  height:150px;
+  width: 150px;
+}
+.temperature {
+  font-size: 40px;
+}
+.forecast {
+  font-size: 50px;
+  text-align: center;
+}
+/* .accordion-flush:focus {
+  outline: none !important;
+  border: none !important;
+} */
+.ticker h2 {
+  color: var(--congress-blue);
+  padding-top: 5%;
+}
+.ticker .col {
+  background-color: var(--stardust);
+  padding: 5px;
+  margin: 5px;
+  width: 70px;
+}
+
+@keyframes ticker-kf {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-108rem, 0, 0);
+  }
+}
+.img-ticker {
+  animation: ticker-kf 18s linear infinite;
+}
+.ticker {
+  margin-bottom:10px;
+}
+.additonal {
+  /* margin-top: 5%; */
+  margin-bottom: 5%;
+  border-top: 1px solid gray;
+}
+.daily-header {
+  margin-top: 10px;
+}
+.daily-header h2 {
+  color: var(--international-orange);
+  font-size: 54px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.daily-header i {
+  color: var(--international-orange);
+  font-size: 50px;
+  margin-top: 30px;
+}
+.orange-header {
+  background-color: var(--international-orange);
+  color: white;
+  padding: 5px;
+}
+.accordion-button {
+  color: white;
+}
+.arrow-icon-orange {
+  color: var(--international-orange);
+  font-size: 30px;
+  position: absolute;
+  top: 40%;
+  right: 2%;
+}
+.date {
+  font-size: 40px;
+  color: white;
+  padding: 5px;
+}
+.article-title-orange{
+  color:var(--international-orange);
+  font-size: 40px;
+}
+.accordion-main {
+  background-color: white;
+  margin-top: 20px;
+}
+.main {
+  background-color: white;
+}
+.accordion-item {
+  margin-bottom: 5px;
+}
