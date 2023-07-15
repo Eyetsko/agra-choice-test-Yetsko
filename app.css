@@ -5,17 +5,17 @@
   --cloud: #c6c6c6;
   --stardust: #EDEDED;
   --main-font:"Fira Sans", Helvetica;
+  /* --bs-accordion-btn-icon: url(images/circle-up-regular.svg); */
 }
-
 .container {
   margin: 0 auto;
   width: 95%;
   padding: 2%;
   font-family: var(--main-font);
-} 
+}
 .wrapper{
   /* border: 1px black solid; */
-  
+
   padding: 2%;
 }
 .header {
@@ -47,9 +47,11 @@
   font-size: 40px;
   font-weight: light;
 }
+.accordion-button .bi::before {
+  content: url(images/circle-up-regular.svg);
+}
 .accordion-body{
   background-color: var(--stardust);
-  border: none;
 }
 .accordion-body row {
   padding: 50px ;
@@ -67,6 +69,10 @@
 }
 .article {
   padding: 20px;
+  position: relative;
+}
+.article-grey{
+  background-color: var(--stardust);
   position: relative;
 }
 .accordion-body a {
@@ -105,10 +111,6 @@ text-decoration: none;
   font-size: 50px;
   text-align: center;
 }
-/* .accordion-flush:focus {
-  outline: none !important;
-  border: none !important;
-} */
 .ticker h2 {
   color: var(--congress-blue);
   padding-top: 5%;
@@ -167,7 +169,7 @@ text-decoration: none;
   font-size: 30px;
   position: absolute;
   top: 40%;
-  right: 2%;
+  right: -0.5%;
 }
 .date {
   font-size: 40px;
@@ -187,4 +189,51 @@ text-decoration: none;
 }
 .accordion-item {
   margin-bottom: 5px;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+.save{
+  color: grey;
+  font-size: 50px;
+  text-align: center;
+}
+.download {
+  border-radius: 10px;
+  background-color: var(--congress-blue);
+  padding: 5%;
+}
+.download a {
+  font-size: 54px;
+  color: white;
+  text-decoration: none;
+}
+.download a:hover {
+  color:white;
+}
+/* .download .logo {
+  padding-bottom: 20px;
+  font-size: 54px;
+  color: white;
+  margin-bottom: 20px;
+} */
+.read {
+  position: relative;
+  margin-top: 20px;
+}
+.pointer {
+  position: absolute;
+  right: 10%;
+  font-size: 200px;
+  bottom:-60%;
+}
+.video {
+  background-color: var(--international-orange);
+}
+.video .logo{
+  color: white;
+}
+.iframe {
+  padding: 20px;
+  margin: 20px;
 }
