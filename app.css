@@ -7,6 +7,9 @@
   --main-font:"Fira Sans", Helvetica;
   /* --bs-accordion-btn-icon: url(images/circle-up-regular.svg); */
 }
+body {
+  padding-bottom: 2%;
+}
 .container {
   margin: 0 auto;
   width: 95%;
@@ -119,7 +122,10 @@ text-decoration: none;
   margin: 5px;
   width: 70px;
 }
-
+iframe {
+  width:100%;
+  height:750px;
+}
 @keyframes ticker-kf {
   0% {
     transform: translate3d(0, 0, 0);
@@ -199,15 +205,23 @@ text-decoration: none;
 .download {
   border-radius: 10px;
   background-color: var(--congress-blue);
-  padding: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin: 5%;
 }
 .download a {
-  font-size: 54px;
   color: white;
   text-decoration: none;
 }
 .download a:hover {
   color:white;
+}
+.download .logomark {
+  font-size: 64px;
+  margin-top: 0;
+  padding-top: 1%;
+  color: white;
+  padding-bottom: 10%;
 }
 /* .download .logo {
   padding-bottom: 20px;
@@ -216,14 +230,15 @@ text-decoration: none;
   margin-bottom: 20px;
 } */
 .read {
+  font-size: 80px;
   position: relative;
-  margin-top: 20px;
+  text-align: center;
 }
 .pointer {
   position: absolute;
-  right: 10%;
+  right: 20%;
   font-size: 200px;
-  bottom:-60%;
+  bottom:40%;
 }
 .video {
   padding: 20px;
@@ -246,13 +261,13 @@ text-decoration: none;
   font-size: 40px;
   line-height: 70px;
 }
-.keywords .col {
+.keywords .col-1 {
   background-color: var(--international-orange);
   color: white;
   font-size: 20px;
   padding: 5px;
   margin: 5px;
-  width: 120px;
+  width: 20%;
   height: 40px;
   border-radius: 3px;
 }
@@ -261,21 +276,18 @@ text-decoration: none;
   color: white;
   background-color: var(--congress-blue);
   font-size: 50px;
-  padding: 20px;
-  height: 700px;
-  /* padding-bottom: 30px; */
+  padding: 5%;
+  height: 600px;
 }
-.footer div {
-  margin-bottom: 80px;
-}
+
 .navbar {
   margin: 0 auto;
-  width: 85.5%;
 }
-.nav-link{
+.nav-link i{
+  font-size: 40px;
   padding-top: 5px;
-  margin-left: 150px;
-  margin-right: 120px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .start{
   padding-top: 5px;
@@ -289,4 +301,97 @@ text-decoration: none;
   height: 50px;
   padding: 15px;
   border-radius: 100%;
+}
+@media (max-width: 1399px) {
+  .logo{
+    font-size: 44px;
+  }
+  .greeting{
+    font-size: 34px;
+  }
+  .user img{
+  width: 150px;
+  height: 150px;
+}
+.daily-header h2 {
+  font-size: 34px;
+}
+.daily-header i {
+  font-size: 30px;
+}
+.arrow-icon-orange {
+  font-size: 20px;
+  right: 2%;
+}
+.date {
+  font-size: 30px;
+}
+.article-title-orange{
+  font-size: 20px;
+}
+.arrow-icon{
+  font-size: 20px;
+}
+.article-title{
+  font-size: 20px;
+}
+.article-content {
+  font-size: 30px;
+}
+  .nav-link i{
+  font-size: 20px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+.search i{
+  font-size: 20px;
+}
+.weather img{
+  height:50px;
+  width: 50px;
+}
+.temperature {
+  margin-left: 5%;
+  font-size: 15px;
+}
+.forecast {
+  font-size: 20px;
+  text-align: center;
+}
+.download .logomark {
+  font-size: 34px;
+}
+.read {
+  font-size: 50px;
+}
+.pointer {
+  font-size: 100px;
+  bottom:70%;
+}
+.keywords .col-1 {
+  font-size: 12px;
+  padding: .8%;
+  margin: .8%;
+
+  /* height: 40px; */
+}
+.footer {
+  font-size: 30px;
+  padding: .5%;
+  height: 400px;
+}
+.save{
+  font-size: 30px;
+}
+iframe {
+  width:100%;
+  height:400px;
+}
+.producer-price-indices h2 {
+  font-size: 44px;
+}
+.producer-price-indices p {
+  font-size: 20px;
+  line-height: 30px;
+}
 }
