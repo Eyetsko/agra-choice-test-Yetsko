@@ -9,16 +9,18 @@
 }
 body {
   padding-bottom: 2%;
+  font-family: var(--main-font);
 }
 .container {
   margin: 0 auto;
   width: 95%;
   padding: 2%;
-  font-family: var(--main-font);
 }
 .wrapper{
   padding: 2%;
 }
+/* header */
+
 .header {
   background-color: var(--stardust);
 }
@@ -44,6 +46,8 @@ body {
   padding-top: 6%;
   margin-left: 20%;
 }
+
+/* daily dropdown */
 .dropdown {
   font-size: 40px;
   font-weight: light;
@@ -56,6 +60,9 @@ body {
 }
 .accordion-body row {
   padding: 50px ;
+}
+.accordion-body a {
+text-decoration: none;
 }
 .blue-box-header {
   background-color: var(--congress-blue);
@@ -72,20 +79,6 @@ body {
   padding: 20px;
   position: relative;
 }
-.article-grey{
-  background-color: var(--stardust);
-  position: relative;
-}
-.accordion-body a {
-text-decoration: none;
-}
-.arrow-icon{
-  position: absolute;
-  top: 40%;
-  right: 2%;
-  color: var(--congress-blue);
-  font-size: 30px;
-}
 .article-title{
   color:var(--congress-blue);
   font-size: 40px;
@@ -94,6 +87,19 @@ text-decoration: none;
   font-size: 50px;
   color: black;
 }
+.article-grey{
+  background-color: var(--stardust);
+  position: relative;
+}
+.arrow-icon{
+  position: absolute;
+  top: 40%;
+  right: 2%;
+  color: var(--congress-blue);
+  font-size: 30px;
+}
+
+/* weather forecast */
 .weather {
   background-color: var(--congress-blue);
   color:white;
@@ -112,6 +118,8 @@ text-decoration: none;
   font-size: 50px;
   text-align: center;
 }
+
+/* stock ticker */
 .ticker h2 {
   color: var(--congress-blue);
   padding-top: 5%;
@@ -121,10 +129,6 @@ text-decoration: none;
   padding: 5px;
   margin: 5px;
   width: 70px;
-}
-iframe {
-  width:100%;
-  height:750px;
 }
 @keyframes ticker-kf {
   0% {
@@ -141,10 +145,32 @@ iframe {
 .ticker {
   margin-bottom:10px;
 }
+
+/* top news */
 .additonal {
-  /* margin-top: 5%; */
   margin-bottom: 5%;
   border-top: 1px solid gray;
+}
+.accordion-main {
+  background-color: white;
+  margin-top: 20px;
+}
+.main {
+  background-color: white;
+}
+.accordion-item {
+  margin-bottom: 5px;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+.accordion-button {
+  color: white;
+}
+.date {
+  font-size: 40px;
+  color: white;
+  padding: 5px;
 }
 .daily-header {
   margin-top: 10px;
@@ -165,8 +191,9 @@ iframe {
   color: white;
   padding: 5px;
 }
-.accordion-button {
-  color: white;
+.article-title-orange{
+  color:var(--international-orange);
+  font-size: 40px;
 }
 .arrow-icon-orange {
   color: var(--international-orange);
@@ -175,33 +202,15 @@ iframe {
   top: 40%;
   right: -0.5%;
 }
-.date {
-  font-size: 40px;
-  color: white;
-  padding: 5px;
-}
-.article-title-orange{
-  color:var(--international-orange);
-  font-size: 40px;
-}
-.accordion-main {
-  background-color: white;
-  margin-top: 20px;
-}
-.main {
-  background-color: white;
-}
-.accordion-item {
-  margin-bottom: 5px;
-}
-.accordion-button:focus {
-  box-shadow: none !important;
-}
+
+/* saved articles */
 .save{
   color: grey;
   font-size: 50px;
   text-align: center;
 }
+
+/* download */
 .download {
   border-radius: 10px;
   background-color: var(--congress-blue);
@@ -223,12 +232,6 @@ iframe {
   color: white;
   padding-bottom: 10%;
 }
-/* .download .logo {
-  padding-bottom: 20px;
-  font-size: 54px;
-  color: white;
-  margin-bottom: 20px;
-} */
 .read {
   font-size: 80px;
   position: relative;
@@ -240,14 +243,22 @@ iframe {
   font-size: 200px;
   bottom:40%;
 }
+
+/* video */
 .video {
   padding: 20px;
   background-color: var(--international-orange);
+}
+iframe {
+  width:100%;
+  height:750px;
 }
 .video .logo{
   padding-top: 0;
   color: white;
 }
+
+/* price bar chart */
 .producer-price-indices {
   color: var(--international-orange);
   padding: 40px;
@@ -261,6 +272,8 @@ iframe {
   font-size: 40px;
   line-height: 70px;
 }
+
+/* top keywords */
 .keywords .col-1 {
   background-color: var(--international-orange);
   color: white;
@@ -271,6 +284,8 @@ iframe {
   height: 40px;
   border-radius: 3px;
 }
+
+/* footbar */
 .footer {
   text-align: center;
   color: white;
@@ -280,6 +295,7 @@ iframe {
   height: 600px;
 }
 
+/* navigation bar */
 .navbar {
   margin: 0 auto;
 }
@@ -302,6 +318,8 @@ iframe {
   padding: 15px;
   border-radius: 100%;
 }
+
+/* for screens under 1399px width */
 @media (max-width: 1399px) {
   .logo{
     font-size: 44px;
@@ -338,7 +356,7 @@ iframe {
 .article-content {
   font-size: 30px;
 }
-  .nav-link i{
+.nav-link i{
   font-size: 20px;
   margin-left: 90px;
   margin-right: 90px;
@@ -372,8 +390,6 @@ iframe {
   font-size: 12px;
   padding: .8%;
   margin: .8%;
-
-  /* height: 40px; */
 }
 .footer {
   font-size: 30px;
@@ -393,5 +409,12 @@ iframe {
 .producer-price-indices p {
   font-size: 20px;
   line-height: 30px;
+}
+}
+@media (max-width: 1200px) {
+  .nav-link i{
+  font-size: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 }
