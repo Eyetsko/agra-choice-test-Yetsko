@@ -14,8 +14,6 @@
   font-family: var(--main-font);
 }
 .wrapper{
-  /* border: 1px black solid; */
-
   padding: 2%;
 }
 .header {
@@ -24,7 +22,7 @@
 .logo{
   padding-top: 5%;
   padding-bottom: 5%;
-  font-size: 54px;
+  font-size: 64px;
   color: var(--congress-blue);
 }
 .user {
@@ -228,12 +226,67 @@ text-decoration: none;
   bottom:-60%;
 }
 .video {
+  padding: 20px;
   background-color: var(--international-orange);
 }
 .video .logo{
+  padding-top: 0;
   color: white;
 }
-.iframe {
-  padding: 20px;
+.producer-price-indices {
+  color: var(--international-orange);
+  padding: 40px;
   margin: 20px;
+}
+.producer-price-indices h2 {
+  font-size: 64px;
+  font-weight: bold;
+}
+.producer-price-indices p {
+  font-size: 40px;
+  line-height: 70px;
+}
+.keywords .col {
+  background-color: var(--international-orange);
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  width: 120px;
+  height: 40px;
+  border-radius: 3px;
+}
+.footer {
+  text-align: center;
+  color: white;
+  background-color: var(--congress-blue);
+  font-size: 50px;
+  padding: 20px;
+  height: 700px;
+  /* padding-bottom: 30px; */
+}
+.footer div {
+  margin-bottom: 80px;
+}
+.navbar {
+  margin: 0 auto;
+  width: 85.5%;
+}
+.nav-link{
+  padding-top: 5px;
+  margin-left: 150px;
+  margin-right: 120px;
+}
+.start{
+  padding-top: 5px;
+  margin-left:0;
+}
+.search i{
+  font-size: 20px;
+  background-color: var(--international-orange);
+  color: white;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  border-radius: 100%;
 }
